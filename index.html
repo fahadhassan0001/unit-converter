@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Unit Converter</h1>
+      <form id="converterForm">
+        <input type="number" id="value" placeholder="Enter value" required />
+
+        <select id="fromUnit">
+          <option value="kilometer">Kilometer</option>
+          <option value="meter">Meter</option>
+          <option value="centimeter">Centimeter</option>
+          <option value="millimeter">Millimeter</option>
+          <option value="inch">Inch</option>
+        </select>
+
+        <span>to</span>
+
+        <select id="toUnit">
+          <option value="kilometer">Kilometer</option>
+          <option value="meter">Meter</option>
+          <option value="centimeter">Centimeter</option>
+          <option value="millimeter">Millimeter</option>
+          <option value="inch">Inch</option>
+        </select>
+
+        <button type="button" id="convertButton">Convert</button>
+      </form>
+
+      <div id="result">
+        <p>Result: <span id="conversionResult"></span></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
